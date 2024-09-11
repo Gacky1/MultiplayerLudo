@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-info {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    gap: 1px;
+    margin: 0 auto;
+    width: 650px;
+    height: 650px;
+}
+
+.ludo-cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.ludo-cell.home {
+    background-color: #ffcc00;
+}
+
+.ludo-cell.start {
+    background-color: #ff6666;
+}
+
+.ludo-cell.home:nth-child(4n) {
+    background-color: #00cc66;
+}
+
+.ludo-cell.start:nth-child(4n) {
+    background-color: #66ccff;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#diceResult {
+    margin-top: 10px;
+    font-size: 18px;
+}

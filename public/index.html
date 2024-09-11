@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-info">
+            <button id="generateCode">Generate Game Code</button>
+            <input type="text" id="gameCode" placeholder="Enter game code">
+            <input type="text" id="playerId" placeholder="Enter Player ID">
+            <button id="joinGame">Join Game</button>
+        </div>
+        <div id="board">
+            <!-- Board layout will be generated dynamically -->
+        </div>
+        <div id="controls">
+            <button id="rollDice">Roll Dice</button>
+            <div id="diceResult">Dice Result: 0</div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
